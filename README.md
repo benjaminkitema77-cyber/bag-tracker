@@ -33,22 +33,22 @@ A responsive expense tracker that records expenses in different currencies and c
 1. Install Node.js (a current supported LTS release is recommended).
 2. Clone the repository:
 
-   ```bash
+      bash
    git clone https://github.com/YOUR-USERNAME/expense-tracker.git
    cd expense-tracker
-   ```
+   
 
 3. Install dependencies:
 
-   ```bash
+      bash
    npm install
-   ```
+   
 
 4. Start the development server:
 
-   ```bash
+      bash
    npm run dev
-   ```
+   
 
 5. Open the local URL printed in your terminal.
 
@@ -56,27 +56,27 @@ A responsive expense tracker that records expenses in different currencies and c
 
 Run the tests:
 
-```bash
+  bash
 npm test
-```
+
 
 Run ESLint:
 
-```bash
+  bash
 npm run lint
-```
+
 
 Build the production site:
 
-```bash
+   bash
 npm run build
-```
+
 
 Preview the production build:
 
-```bash
+   bash
 npm run preview
-```
+
 
 ## Exchange rates
 
