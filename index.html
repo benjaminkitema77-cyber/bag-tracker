@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Track expenses in multiple currencies and convert them using exchange rates."
+  >
+  <title>Expense Tracker | Sewesyder Foreign Exchange</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./src/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>EXPENSE TRACKER</h1>
+
+      <ul class="nav-links">
+        <li><a href="#currency">Add Expense</a></li>
+        <li><a href="#expenses">Expenses</a></li>
+        <li><a href="#exchange-rate-api">Exchange Rates</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <p class="subtitle">Sewesyder Foreign Exchange</p>
+      <h2>Track Your Expenses</h2>
+      <p>Track your spending and convert currencies using exchange rates.</p>
+      <a class="hero-button" href="#currency">Start Tracking</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="currency">
+      <h2>Add an Expense</h2>
+
+      <form id="expense-form">
+        <label for="description">Description</label>
+        <input
+          type="text"
+          id="description"
+          name="description"
+          placeholder="For example, lunch"
+          maxlength="100"
+          required
+        >
+
+        <label for="amount">Amount</label>
+        <input
+          type="number"
+          id="amount"
+          name="amount"
+          placeholder="0.00"
+          min="0.01"
+          max="1000000000000"
+          step="any"
+          required
+        >
+
+        <label for="currency-select">Currency paid in</label>
+        <select id="currency-select" name="currency" required>
+          <option value="USD">USD — US Dollar</option>
+          <option value="EUR">EUR — Euro</option>
+          <option value="GBP">GBP — British Pound</option>
+          <option value="KES" selected>KES — Kenyan Shilling</option>
+          <option value="INR">INR — Indian Rupee</option>
+        </select>
+
+        <label for="category">Category</label>
+        <select id="category" name="category" required>
+          <option value="Food">Food</option>
+          <option value="Transport">Transport</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <button type="submit" id="add-button">Add Expense</button>
+        <p id="form-message" role="alert"></p>
+      </form>
+    </section>
+
+    <section id="expenses">
+      <h2>Expenses</h2>
+
+      <label for="home-currency">Convert totals to</label>
+      <select id="home-currency" name="homeCurrency">
+        <option value="KES" selected>KES — Kenyan Shilling</option>
+        <option value="USD">USD — US Dollar</option>
+        <option value="EUR">EUR — Euro</option>
+        <option value="GBP">GBP — British Pound</option>
+        <option value="INR">INR — Indian Rupee</option>
+      </select>
+
+      <p>Total: <strong id="total-amount">KES 0.00</strong></p>
+      <p id="summary-note">0 recorded expenses</p>
+
+      <label for="category-filter">Filter by category</label>
+      <select id="category-filter">
+        <option value="All">All categories</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <div id="expense-list" aria-live="polite">
+        <p id="empty-state">No expenses added yet.</p>
+      </div>
+    </section>
+
+    <section id="exchange-rate-api">
+      <h2>Exchange Rate API</h2>
+      <p id="rate-status" role="status">
+        Loading exchange rates...
+      </p>
+      <p id="error-message" role="alert"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sewesyder Foreign Exchange</p>
+  </footer>
+</body>
+</html>

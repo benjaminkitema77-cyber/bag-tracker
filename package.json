@@ -1,0 +1,23 @@
+
+{
+  "name": "sewesyder-expense-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "eslint": "^9.35.0",
+    "gh-pages": "^6.3.0",
+    "globals": "^16.4.0",
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4"
+  }
+}
