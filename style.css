@@ -250,16 +250,6 @@ button:disabled {
   font-weight: 700;
 }
 
-.delete-button {
-  flex-shrink: 0;
-  min-height: 38px;
-  padding: 0.5rem 0.75rem;
-  background: #b91c1c;
-}
-
-.delete-button:hover {
-  background: #7f1d1d;
-}
 
 #empty-state {
   color: var(--muted);
