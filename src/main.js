@@ -3,7 +3,7 @@ import { fetchExchangeRates } from "./api.js";
 import {
   addExpense,
   getExpenses,
-  removeExpense,
+  
 } from "./state.js";
 import {
   renderExpenses,
