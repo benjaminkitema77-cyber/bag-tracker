@@ -1,7 +1,7 @@
 
 # Sewesyder Expense Tracker
 
-A responsive expense tracker that records expenses in different currencies and converts them into a selected home currency using live exchange rates.
+A responsive expense tracker that records expenses in different currencies and `converts them into a selected home currency using live exchange rates`.
 
 ## Features
 
@@ -34,7 +34,7 @@ A responsive expense tracker that records expenses in different currencies and c
 2. Clone the repository:
 
       bash
-   git clone https://github.com/YOUR-USERNAME/expense-tracker.git
+   git clone https://github.com/benjaminkitema77-cyber/expense-tracker.git
    cd expense-tracker
    
 
@@ -92,9 +92,7 @@ An internet connection is required to retrieve current exchange rates.
 
 The project can be deployed to GitHub Pages. Configure the repository's Pages settings and deployment workflow, then publish the built site.
 
-Live demo: ADD-YOUR-GITHUB-PAGES-URL
-
-Repository: ADD-YOUR-GITHUB-REPOSITORY-URL
+Live demo: https://benjaminkitema77-cyber.github.io/bag-tracker/
 
 ## Current limitations
 
