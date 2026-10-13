@@ -118,15 +118,7 @@ form.addEventListener("submit", (event) => {
   renderApp();
 });
 
-document.querySelector("#expense-list").addEventListener("click", (event) => {
-  const deleteButton = event.target.closest("[data-delete-id]");
 
-  if (!deleteButton) return;
-
-  removeExpense(deleteButton.dataset.deleteId);
-  showFormMessage("Expense deleted.");
-  renderApp();
-});
 
 homeCurrencyInput.addEventListener("change", () => {
   renderApp();
