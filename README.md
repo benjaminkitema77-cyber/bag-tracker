@@ -18,8 +18,8 @@ A responsive expense tracker that records expenses in different currencies and `
 
 ## Technologies
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript ES modules
 - Fetch API and async/await
 - ExchangeRate-API
