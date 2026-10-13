@@ -8,7 +8,6 @@ A responsive expense tracker that records expenses in different currencies and `
 - Add expenses with descriptions, amounts, currencies, and categories.
 - Display each expense in its original currency and converted home currency.
 - Calculate a running total.
-- Delete expenses.
 - Filter expenses by category.
 - Select a home currency.
 - Fetch live exchange rates from the ExchangeRate-API endpoint.
